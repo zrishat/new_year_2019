@@ -12,5 +12,6 @@ while len(Payload)>0:
     CurrentSum = Payload[0:2]
   ElementIndex = int(CurrentSum) - int(MagicNumber)
   ElementChar = alphabet[ElementIndex]
-  print ElementChar
+  OutputString += ElementChar
   Payload = Payload.replace(CurrentSum,'')
+print OutputString.capitalize()
